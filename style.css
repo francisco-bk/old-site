@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    font-family: "Open Sans",sans-serif;
+    letter-spacing: 2px;
+    line-height: 1.25;
+    background: black;
+}
+
+.accent {
+    color: rgb(153, 102, 204);
+    text-decoration: none;
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    border-bottom: rgb(153, 102, 204)solid 2px;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar_options { 
+    width: 50vw;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#homescreen {
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 35px;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+i {
+    color: rgb(153, 102, 204);
+    font-size: 20px;
+}
+
+.options {
+    display: block;
+    text-align: center;
+}
+
+.options a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgb(153, 102, 204);
+}
+
+.options a:hover {
+    opacity: 0.5;
+    border-top: 4px solid black;
+}
+
+.content {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    display: none;
+    color: rgb(255, 255, 255, 0.5);
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h1:after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 150px;
+    margin: 20px 0 50px;
+    background:rgb(153, 102, 204);
+
+
+}
+
+.headshottext {
+    display: flex;
+}
+
+#headshot { 
+    width: 15vw;
+    height: 15vw;
+    border: solid rgb(255, 255, 255, 0.5) 0.5vw;
+    margin-right: 3.5vw;
+}
+
+.pair {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+p {
+    font-size: 25px;
+
+}
+
+.schools {
+    display: flex;
+}
+
+.logo {
+    width: 7vw;
+    margin-right: 3.5vw;
+}
+
+#schooltext {
+    margin-top: 3.5vw;
+    margin-bottom: 3.5vw;
+}
+
+.experiences {
+    display: none;
+    margin-left: 10px;
+    border: solid rgb(255, 255, 255, 0.5) 5px;
+    font-size: 25px;
+    height: 500px;
+}
+
+.experiences div ul {
+    margin-right: 1vw;
+}
+
+#asc {
+    display: flex;
+}
+
+#ascBtn{
+    border: rgb(255, 255, 255, 0.5) 5px solid;
+}
+
+.expOptions {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.expOptions li {
+    background: rgb(153, 102, 204);
+    width: 150px;
+    border: rgb(153, 102, 204) 5px solid;
+    border-radius: 20px;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.expButton {
+    text-decoration: none;
+    background: rgb(153, 102, 204);
+    color: rgb(0, 0, 0);
+    font-size: 1vw;
+    font-weight: bold;
+    width: 10vw;
+    height: 6vw;
+    margin-bottom: 20px;
+}
+
+.expSidebar {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sidebar {
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.tb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ascImage {
+    width: 600px;
+}
+
+.list {
+    margin-top: 10px;
+}
+
+#researchLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#papers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.paperLink {
+    border: solid 5px rgb(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 1.2vw;
+    text-decoration: none;
+    font-size: 1.2vw;
+   
+}
+
+#clubPhoto {
+    height: 500px;
+}
+
+.space {
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1675px) {
+    .ascImage {
+        width: 500px;
+    }
+    .experiences {
+        height: 425px;
+        font-size: 20px;
+    }
+    #clubPhoto {
+        height: 425px;
+    }
+}
+
+@media screen and (max-width: 1425px) {
+    .options a {
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 8px;
+    }
+    .ascImage {
+        width: 400px;
+    }
+    .experiences {
+        height: 335px;
+        font-size: 16px;
+    }
+    .expButton {
+        font-size: 12px;
+    }
+    #clubPhoto {
+        height: 335px;
+    }
+}
+
+@media screen and (max-width: 1185px) {
+    #homescreen {
+        font-size: 20px;
+    }
+    p {
+        font-size: 18px;
+    }
+    #headshot {
+        width: 150px;
+        height: 150px;
+    }
+    .logo {
+        margin-top: 3.5vw;
+        width: 100px;
+    }
+    .ascImage {
+        width: 300px;
+    }
+    .experiences {
+        height: 250px;
+        font-size: 12px;
+    }
+    .expButton {
+        font-size: 10px;
+    }
+    #clubPhoto {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .experiences {   
+        flex-direction: column;
+        height: auto;
+    }
+    .experiences div ul {
+        margin-bottom: 20px;
+        margin-top: 2vw;
+    }
+    .ascImage {
+        width: 100%;
+    }
+    .expButton {
+        font-size: 1vw;
+        height: 8vw;
+    }
+    #papers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #papers a {
+        text-align: center;
+        font-size: 20px;
+        width: 55vw;
+        margin-bottom: 1vw;
+    }
+    #clubPhoto {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    #homescreen {
+        font-size: 12px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    
+    i {
+        font-size: 12px;
+    }
+    .options a {
+        padding-right: 1px;
+        padding-left: 1px;
+        font-size: 6px;
+    }
+    #navbar_options { 
+      width: 100vw;
+    }
+    #headshot {
+        width: 50vw;
+        height: 50vw;
+        margin-bottom: 3.5vw;
+    }
+    .headshottext {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo {
+        width: 35vw;
+        height: 35vw;
+    }
+    .expSidebar {
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+    }
+    .expButton {
+        width: 23vw;
+        height: 15vw;
+        font-size: 2vw;
+
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .space {
+        font-size: 15px;
+    }
+}
